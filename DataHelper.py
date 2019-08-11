@@ -99,8 +99,8 @@ class DataHelper(object):
                 print(queryList)
                 sys.exit()
                 
-            if one in self.char2id:
-                wordIds.append(self.char2id[one])
+            if word in self.char2id:
+                wordIds.append(self.char2id[word])
             else:
                 wordIds.append(self.char2id["<unk>"])
             if label in self.tag2id:
